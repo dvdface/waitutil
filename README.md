@@ -13,6 +13,15 @@
 
 None
 
+# test info
+```
+Name               Stmts   Miss  Cover
+--------------------------------------
+wait\__init__.py       2      0   100%
+wait\wait.py          65      6    91%
+--------------------------------------
+TOTAL                 67      6    91%
+```
 # how to use
 1. **install package**
    
