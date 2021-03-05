@@ -1,4 +1,5 @@
 # changelist
+* 1.1.0,  add wait_for
 * 1.0.0,  first release
 
 # feedback
@@ -38,6 +39,15 @@ None
     wait_for_true(demo, interval=1, timeout=5)
 
     wait_for_false(demo, interval=1, timeout=5)
+    ```
+4. **use wait_for**
+    from wait import wait_for
+
+    def func():
+        import random
+        return random.randint(0, 1)
+
+    wait_for(func, 0)
     ```
 
 # how to contribute

@@ -2,6 +2,13 @@ import pytest
 
 from wait import *
 
+def test_wait_for():
+    def func():
+        import random
+        return random.randint(0, 1)
+
+    wait_for(func, 0) 
+
 def test_wait_for_true():
 
     def TFunc():
