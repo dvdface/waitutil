@@ -51,6 +51,7 @@ TOTAL                 67      6    91%
     wait_for_false(demo, interval=1, timeout=5)
     ```
 4. **use wait_for**
+    ```
     from wait import wait_for
 
     def func():
