@@ -1,4 +1,5 @@
 # changelist
+* 1.1.2,  fix readme
 * 1.1.1,  update type hint
 * 1.1.0,  add wait_for
 * 1.0.0,  first release

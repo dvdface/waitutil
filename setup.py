@@ -10,7 +10,7 @@ def readme():
 
 setuptools.setup(
     name='wait-util',
-    version='1.1.1',
+    version='1.1.2',
     author='Ding Yi',
     author_email='dvdface@hotmail.com',
     url='https://github.com/dvdface/waitutil',
