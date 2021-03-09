@@ -1,15 +1,15 @@
 from types import FunctionType, MethodType
-from typing import NoReturn, Any
+from typing import NoReturn, Any, Union
 import time
 import logging
 
 logger = logging.getLogger(__name__)
 
-def wait_for(func:FunctionType, value:Any, interval:int=1, timeout:int=30) -> NoReturn:
+def wait_for(func:Union[FunctionType, MethodType], value:Any, interval:int=1, timeout:int=30) -> NoReturn:
     """wait for function to return specified value
 
     Args:
-        func (functionType): function to call
+        func (FunctionType, MethodType): function to call
         value (Any): expected value returned by function
         interval (int, optional): interval to check, default 5 sec
         timeout (int, optional): check timeout, if timeout and the return is no changed, raise TimeoutError. default 600s

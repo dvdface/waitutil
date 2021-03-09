@@ -1,12 +1,13 @@
 Metadata-Version: 2.1
 Name: wait-util
-Version: 1.0.0
+Version: 1.1.0
 Summary: wait function used to wait event happens
 Home-page: https://github.com/dvdface/waitutil
 Author: Ding Yi
 Author-email: dvdface@hotmail.com
 License: MIT
 Description: # changelist
+        * 1.1.0,  add wait_for
         * 1.0.0,  first release
         
         # feedback
@@ -46,6 +47,15 @@ Description: # changelist
             wait_for_true(demo, interval=1, timeout=5)
         
             wait_for_false(demo, interval=1, timeout=5)
+            ```
+        4. **use wait_for**
+            from wait import wait_for
+        
+            def func():
+                import random
+                return random.randint(0, 1)
+        
+            wait_for(func, 0)
             ```
         
         # how to contribute
